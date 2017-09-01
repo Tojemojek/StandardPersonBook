@@ -23,12 +23,11 @@ public class Main {
         try (FileOutputStream fileOut = new FileOutputStream("personList.ser");
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             out.writeObject(people);
-            System.out.printf("Serialized data is saved in");
+            System.out.print("Zapisano dane");
         } catch (IOException i) {
             i.printStackTrace();
         }
 
-        System.out.println("Co wyszło?");
 
         people.forEach(System.out::println);
 

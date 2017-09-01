@@ -15,13 +15,16 @@ public class CreatePhoneNumbers {
         for (Person ppl: people){
             List<String> tmp = new ArrayList<>();
             Integer ileNr = rnd.nextInt(5);
-            StringBuilder sb = new StringBuilder();
 
-            sb.append("+48 ");
+
+
             for (int i = 0; i < ileNr;i++ ){
-
+                StringBuilder sb = new StringBuilder();
+                sb.append("+48");
                 for (int j = 0; j<3;j++) {
+                    sb.append(" ");
                     sb.append(100 + rnd.nextInt(899));
+
                 }
                 tmp.add(sb.toString());
             }
