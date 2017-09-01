@@ -11,10 +11,15 @@ public class Main2 {
     static List<Person> people = new ArrayList<>();
 
     public static void main(String[] args) {
+
+
         ReadSerializedPeoplesList.readFile(people);
 
 
-        System.out.println();
+        people.forEach(System.out::println);
+
+
     }
 
 }
+
