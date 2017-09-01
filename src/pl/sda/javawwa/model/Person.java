@@ -33,19 +33,6 @@ public class Person implements Serializable {
         this.telNo = telNo;
     }
 
-    public Person(String name, String surname, String addressStreet, Integer addressStreetNumber, String addressCity, String zipCode, LocalDate birthDate, String bloodType, Double weightInKg, Double heightInCm) {
-        this.name = name;
-        this.surname = surname;
-        this.addressStreet = addressStreet;
-        this.addressStreetNumber = addressStreetNumber;
-        this.addressCity = addressCity;
-        this.zipCode = zipCode;
-        this.birthDate = birthDate;
-        this.bloodType = bloodType;
-        this.weightInKg = weightInKg;
-        this.heightInCm = heightInCm;
-    }
-
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
